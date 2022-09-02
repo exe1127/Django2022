@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+body {
+	height: 100%;
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #c0bbc9;
+}
+
+h1 {
+	font-size: 35px;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #20ebd3;
+}
+
+.parrafo {
+	margin-left: 100px;
+}
+
+.parrafo p {
+	font-size: 45px;
+	text-align: center;
+}
+
+.buttons {
+	min-width: 30px;
+	size: 30px;
+}
+
+
+
+.mapa{
+	font-size: 45px;
+	text-align: center;
+}
