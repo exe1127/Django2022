@@ -1,9 +1,6 @@
 
 from pathlib import Path
 from django.urls import reverse_lazy
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,7 +36,6 @@ INSTALLED_APPS = [
     'apps.usuario',
     'apps.carrousel',
     
-    'cloudinary'
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -141,12 +137,7 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-cloudinary.config( 
-  cloud_name = "ong", 
-  api_key = "732359667312424", 
-  api_secret = "lH05TeYr2W_7_CF-hgsT3W6sINQ",
-  secure = True
-)
+
 
 
 # Default primary key field type
