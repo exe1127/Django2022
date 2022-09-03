@@ -18,7 +18,7 @@ class Noticia(models.Model):
     resumen = models.CharField(max_length=250, null=False, default=" ")
     activo = models.BooleanField(default=True)
     categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True)
-    imagen = models.FileField(upload_to = "Uploaded Files/")
+    imagen = models.FileField(null=True, blank=True, upload_to = "Uploaded Files/")
     usuario = models.ForeignKey(Usuario, null=True, on_delete=models.SET_NULL)
 
     def __str__(self):
