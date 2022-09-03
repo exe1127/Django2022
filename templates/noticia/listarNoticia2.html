@@ -46,7 +46,7 @@
                                     {{p.resumen}}
                                 </p>
                                 {% if user.is_superuser %}
-                                <a style="justify-content: flex-end;" class="btn btn-outline-secondary" href="{% url 'apps.noticia:delete_noticia' p.id%}">Eliminar</a>
+                                <a style="justify-content: flex-end;" class="btn btn-outline-danger" href="{% url 'apps.noticia:delete_noticia' p.id%}">Eliminar</a>
                                {% comment %} {% if user.is_superuser %}
                                     <button type="button" style="justify-content: flex-end;" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         Eliminar
